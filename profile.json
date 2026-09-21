@@ -1,0 +1,79 @@
+{
+  "version": "0.2.2",
+  "target_name": "EAT-700",
+  "target_hash": "b2b5e0d185605f9e",
+  "owner_rva": 41349312,
+  "tables": [
+    {
+      "name": "ProjectileWeaponComponent",
+      "owner_offset": 15800896,
+      "size": 170392,
+      "sha256": "13112956CC9AABF32291EE1F4BB09D8D20534343D3D4DBF9AA67FC7A4C38A7B5",
+      "patched_sha256": "DE09AB3158C90768BCE14CDB6463FEEF6DF1E91FBB4FC26ACAF4EBF5BCF7885C",
+      "target_offset": 154376,
+      "donor_offset": 151296,
+      "record_size": 616,
+      "edits": [
+        {
+          "offset": 154376,
+          "before": "00010000",
+          "after": "32010000"
+        },
+        {
+          "offset": 154952,
+          "before": "00000000",
+          "after": "60000000"
+        }
+      ],
+      "protected_eat17_offset": 159920
+    },
+    {
+      "name": "WeaponDataComponent",
+      "owner_offset": 15800216,
+      "size": 444256,
+      "sha256": "C345309A5BC52E8C8951DA5B3D6C1A5CBC086175418E0325576FBC44E40F12C6",
+      "patched_sha256": "75DA42C75BE3623863C3C62E6C9ECEB43624C224A12D7CAA87DD7F0DCC15CEFA",
+      "target_offset": 405344,
+      "donor_offset": 395616,
+      "record_size": 1216,
+      "edits": [
+        {
+          "offset": 405512,
+          "before": "00000000",
+          "after": "08000000"
+        }
+      ],
+      "protected_eat17_offset": 419936
+    }
+  ],
+  "exe_sha256": "A09FF52663E73B94FB0CAC0DCB5BA84FFD10ECF44F74A8921AC66AF923988CC3",
+  "dll_sha256": "CC75948D90FDFDE259DCB519E9933DB7FFA3CCB281CE4FB89E6B1B011557470C",
+  "signatures": {
+    "0x504480": "4885c97471488b0534ac2602448bc14c8b909817f10048b8",
+    "0x504940": "4883ec284c8bd14885c9750733c04883c428c38b41083b05",
+    "0x50fa40": "4885c97471488b0574f62502448bc14c8b90401af10048b8",
+    "0x50ff30": "4883ec284c8bd14885c9750733c04883c428c38b41083b05",
+    "0xf51d50": "85c97508488d0525b2b701c38bc1488d0dabb3b701488b04",
+    "0x86f873": "f30f1043684c8d8424a00000008bd6f30f118424a0000000"
+  },
+  "cooldown": {
+    "slot_rva": 44880448,
+    "record_id": 38,
+    "record_size": 400,
+    "offset": 104,
+    "identity_hex": "2600000047dd196cc8ab98f3",
+    "name_offset": 24,
+    "name": "nui_weapon_support_expendable_napalm_launcher_name",
+    "before": "00000c43",
+    "after": "00008c42",
+    "original_base_seconds": 140,
+    "base_seconds": 70,
+    "effective_seconds": 59.849998474121094,
+    "display_seconds": 60,
+    "upgrade_multipliers": [
+      0.949999988079071,
+      0.8999999761581421
+    ],
+    "evidence": "PID 22024: native cooldown end-start = 119700000 microseconds; original base 140s; 2026-09-21"
+  }
+}
