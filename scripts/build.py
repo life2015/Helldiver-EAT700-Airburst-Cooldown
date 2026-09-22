@@ -108,8 +108,8 @@ def build():
         report={'display_name':DISPLAY_NAME,'version':version,'channel':channel,'source_sha256':sha(text.encode()),'archive_sha256':sha(archive),
                 'resources':resources,'data_directory':directory,'implementation_sha256':sha(code),
                 'tested_loader_zip_sha256':LOADER_SHA[channel],'startup_tests':checks,
-                'profile':profile,'validation':{'live_data_trial':'Previous 0.2.1 trial confirmed EAT-700 airburst and Flak / Cluster switching; new base cooldown 70s matching EAT-17 is not yet tested in game',
-                'packaged_startup_in_game':False,'EAT700_without_RL77_loaded':False,'multiplayer':False},
+                'profile':profile,'validation':{'live_data_trial':'User confirmed the local airburst variant complete on 2026-09-23; local deployment uses v15. Base cooldown 70s matches EAT-17.',
+                'packaged_startup_in_game':channel=='v15','EAT700_without_RL77_loaded':False,'multiplayer':False},
                 'bundled_loader':channel=='v14','replaces_wwise':channel=='v14'}
         name=package_name(channel,version)
         manifest={'Version':1,'Guid':'9b857302-169c-4d48-b085-2d395ad94a63','Name':f'{DISPLAY_NAME} {version} {channel}',

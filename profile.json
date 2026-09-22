@@ -1,67 +1,68 @@
 {
-  "version": "0.2.2",
+  "version": "0.2.3",
   "target_name": "EAT-700",
   "target_hash": "b2b5e0d185605f9e",
-  "owner_rva": 41349312,
+  "owner_rva": 54968216,
   "tables": [
     {
       "name": "ProjectileWeaponComponent",
-      "owner_offset": 15800896,
-      "size": 170392,
-      "sha256": "13112956CC9AABF32291EE1F4BB09D8D20534343D3D4DBF9AA67FC7A4C38A7B5",
-      "patched_sha256": "DE09AB3158C90768BCE14CDB6463FEEF6DF1E91FBB4FC26ACAF4EBF5BCF7885C",
-      "target_offset": 154376,
-      "donor_offset": 151296,
+      "owner_offset": 15806080,
+      "size": 176224,
+      "sha256": "87B1045295159620DD45BFDCE334C46DDC88F6F4332B9B07991AB6DD75B3A154",
+      "patched_sha256": "4E379CFFB203C5238B7142B8308130A6A373F5E3EAA2E42AC17C48F233048CFD",
+      "target_offset": 160208,
+      "donor_offset": 157128,
       "record_size": 616,
       "edits": [
         {
-          "offset": 154376,
-          "before": "00010000",
-          "after": "32010000"
+          "offset": 160208,
+          "before": "03010000",
+          "after": "38010000"
         },
         {
-          "offset": 154952,
+          "offset": 160784,
           "before": "00000000",
           "after": "60000000"
         }
       ],
-      "protected_eat17_offset": 159920
+      "protected_eat17_offset": 165752
     },
     {
       "name": "WeaponDataComponent",
-      "owner_offset": 15800216,
-      "size": 444256,
-      "sha256": "C345309A5BC52E8C8951DA5B3D6C1A5CBC086175418E0325576FBC44E40F12C6",
-      "patched_sha256": "75DA42C75BE3623863C3C62E6C9ECEB43624C224A12D7CAA87DD7F0DCC15CEFA",
-      "target_offset": 405344,
-      "donor_offset": 395616,
-      "record_size": 1216,
+      "owner_offset": 15805400,
+      "size": 462592,
+      "sha256": "F6B560DE947A8E5A0AAEAE3BABAF4F41E6165E85841134019B7F0670586726EF",
+      "patched_sha256": "7C0347FD3E1032429EFD6B2489D071FF409DD333DCEE99A96DD4A85BBA454FDC",
+      "target_offset": 423168,
+      "donor_offset": 413312,
+      "record_size": 1232,
       "edits": [
         {
-          "offset": 405512,
+          "offset": 423352,
           "before": "00000000",
           "after": "08000000"
         }
       ],
-      "protected_eat17_offset": 419936
+      "protected_eat17_offset": 437952
     }
   ],
-  "exe_sha256": "A09FF52663E73B94FB0CAC0DCB5BA84FFD10ECF44F74A8921AC66AF923988CC3",
-  "dll_sha256": "CC75948D90FDFDE259DCB519E9933DB7FFA3CCB281CE4FB89E6B1B011557470C",
+  "exe_sha256": "D8E23968D1412B07E06785321727D63EDF74E711214D6F6ADEB3BFCA95CA6827",
+  "dll_sha256": "73374BD4E38386BEB9A23BEF480082B67D457EBC77485FBEC5F488B4E95E201F",
   "signatures": {
-    "0x504480": "4885c97471488b0534ac2602448bc14c8b909817f10048b8",
-    "0x504940": "4883ec284c8bd14885c9750733c04883c428c38b41083b05",
-    "0x50fa40": "4885c97471488b0574f62502448bc14c8b90401af10048b8",
-    "0x50ff30": "4883ec284c8bd14885c9750733c04883c428c38b41083b05",
-    "0xf51d50": "85c97508488d0525b2b701c38bc1488d0dabb3b701488b04",
-    "0x86f873": "f30f1043684c8d8424a00000008bd6f30f118424a0000000"
+    "0x509570": "4885c97471488b051c2af602448bc14c8b90d82bf10048b8",
+    "0x509a40": "4883ec284c8bd14885c9750733c04883c428c38b41083b05",
+    "0x514c10": "4885c97471488b057c73f502448bc14c8b90802ef10048b8",
+    "0x515100": "4883ec284c8bd14885c9750733c04883c428c38b41083b05",
+    "0x11f2c30": "85c97508488d0535885d02c38bc1488d0dbb895d02488b04",
+    "0x8797c3": "f30f1043684c8d8424a00000008bd6f30f118424a0000000",
+    "0x75249f": "418b87b8000000898550030000418b87bc00000089855403"
   },
   "cooldown": {
-    "slot_rva": 44880448,
-    "record_id": 38,
+    "slot_rva": 58505016,
+    "record_id": 39,
     "record_size": 400,
     "offset": 104,
-    "identity_hex": "2600000047dd196cc8ab98f3",
+    "identity_hex": "2700000047dd196cc8ab98f3",
     "name_offset": 24,
     "name": "nui_weapon_support_expendable_napalm_launcher_name",
     "before": "00000c43",
@@ -74,6 +75,6 @@
       0.949999988079071,
       0.8999999761581421
     ],
-    "evidence": "PID 22024: native cooldown end-start = 119700000 microseconds; original base 140s; 2026-09-21"
+    "evidence": "Build 25327279: read-only registry id 39 EAT-700 base 140s; id 147 EAT-17 base 70s; getter 0x11f2c30 and float read 0x8797c3; menu read 0x75249f at +184"
   }
 }
